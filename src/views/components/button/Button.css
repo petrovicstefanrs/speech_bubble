@@ -1,0 +1,39 @@
+.sb-Button {
+	height: var(--button__height);
+	min-width: var(--button__width--min);
+	max-width: var(--button__width--max);
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border: 1px solid var(--color__secondary);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.sb-Button:hover {
+	box-shadow: var(--button__drop-shadow);
+}
+
+.sb-Button-left {
+	flex-direction: row;
+}
+
+.sb-Button-right {
+	flex-direction: row-reverse;
+}
+
+.sb-Button-left > .sb-Button-icon {
+	margin-right: 10px;
+}
+
+.sb-Button-right > .sb-Button-icon {
+	margin-left: 10px;
+}
+
+.sb-Button-disabled {
+	cursor: not-allowed;
+	background: var(--color__gray);
+	border-color: var(--color__gray--light);
+}

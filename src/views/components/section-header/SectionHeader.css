@@ -1,0 +1,27 @@
+.sb-SectionHeader > h1,
+.sb-SectionHeader > h2,
+.sb-SectionHeader > h3,
+.sb-SectionHeader > h4,
+.sb-SectionHeader > h5,
+.sb-SectionHeader > h6 {
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	font-weight: 400;
+	color: var(--font__color--dark);
+}
+
+.sb-SectionHeader > h1 span,
+.sb-SectionHeader > h2 span,
+.sb-SectionHeader > h3 span,
+.sb-SectionHeader > h4 span,
+.sb-SectionHeader > h5 span,
+.sb-SectionHeader > h6 span {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: var(--bg__color);
+	border-left: 2px solid transparent;
+	animation: var(--animation__typing);
+}

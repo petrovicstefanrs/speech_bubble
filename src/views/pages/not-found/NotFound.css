@@ -1,0 +1,17 @@
+.sb-NotFound-left, .sb-NotFound-right, .sb-Separator {
+	height: 200px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sb-NotFound-left > img {
+	max-width: 200px;
+}
+
+.sb-NotFound-right .sb-Button {
+	margin: 20px 0 0;
+	width: var(--button__width--min);
+}

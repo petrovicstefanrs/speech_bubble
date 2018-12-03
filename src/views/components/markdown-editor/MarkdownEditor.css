@@ -1,0 +1,39 @@
+.sb-MarkdownEditor {
+	width: 100%;
+}
+
+.sb-MarkdownEditor-editor {
+	height: inherit;
+	min-height: 300px;
+}
+
+.sb-MarkdownEditor-preview {
+	height: auto;
+	min-height: 300px;
+}
+
+.sb-MarkdownEditor-tabs {
+	height: 40px;
+	width: 100%;
+	display: flex;
+}
+
+.sb-MarkdownEditor-tab {
+	height: 100%;
+	width: 50%;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: var(--color__gray);
+	transition: all 0.3s ease-in-out;
+}
+
+.sb-MarkdownEditor-tab:hover {
+	background: var(--color__gray--light);
+}
+
+.sb-MarkdownEditor-tab-active {
+	background: var(--color__gray--light);
+}

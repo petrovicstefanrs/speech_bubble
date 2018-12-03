@@ -1,0 +1,42 @@
+/* stylelint-disable */
+
+.sb-Spinner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sb-Spinner span {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+}
+
+.sb-Spinner span:before,
+.sb-Spinner span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	opacity: 0;
+	animation: var(--animation__pulse--1);
+}
+
+.sb-Spinner span:after {
+	animation: var(--animation__pulse--2);
+}

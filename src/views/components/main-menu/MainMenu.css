@@ -1,0 +1,150 @@
+.sb-MainMenu {
+	width: 100%;
+	height: var(--main-menu__height);
+	box-shadow: var(--drop-shadow__regular);
+	background: var(--main-menu__bg);
+}
+
+.sb-MainMenu-wrapper {
+	height: 100%;
+	margin: 0 auto;
+	max-width: var(--content__maxWidth);
+	display: flex;
+}
+
+.sb-MainMenu-logo {
+	width: 200px;
+	height: 100%;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+
+.sb-MainMenu-logo > a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.sb-MainMenu-logo > a:hover {
+	color: var(--font__color--dark);
+}
+
+.sb-MainMenu-logo > a > img {
+	width: auto;
+	height: 30px;
+}
+
+.sb-MainMenu-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.sb-MainMenu-link {
+	margin-left: 20px;
+	padding: 5px 0;
+	position: relative;
+}
+
+.sb-MainMenu-link:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background: var(--color__pink);
+	transition: all 0.3s ease-in-out;
+}
+
+.sb-MainMenu-link:hover:after {
+	width: 100%;
+	background: var(--color__pink);
+}
+
+.sb-MainMenu-link-active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: var(--color__pink);
+	transition: all 0.3s ease-in-out;
+}
+
+.sb-MainMenu-link > .fa {
+	margin-right: 5px;
+	color: var(--color__pink);
+}
+
+/* User Dropdown */
+
+.sb-MainMenu-dropdown {
+	position: relative;
+	margin-left: 20px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 180px;
+}
+
+.sb-MainMenu-dropdownTrigger {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	cursor: pointer;
+	background-color: var(--color__gray);
+	padding: 0 10px;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	z-index: 2;
+}
+
+.sb-MainMenu-dropdownTrigger .sb-Avatar {
+	flex-shrink: 0;
+}
+
+.sb-MainMenu-dropdownTrigger:hover {
+	background-color: var(--color__gray--light);
+}
+
+.sb-MainMenu-dropdownTriggerName {
+	margin-right: 10px;
+}
+
+.sb-MainMenu-dropdownMenu {
+	margin-top: -100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	background: var(--color__gray);
+	transition: all 0.5s ease-in-out;
+}
+
+.sb-MainMenu-dropdownItem {
+	cursor: pointer;
+	padding: 0 10px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.sb-MainMenu-dropdownItem:hover {
+	background-color: var(--color__gray--light);
+}
+
+.sb-MainMenu-dropdownItem > .fa {
+	width: 26px;
+	color: var(--color__pink);
+}
+
+.sb-MainMenu-dropdown:hover > .sb-MainMenu-dropdownMenu {
+	margin-top: 0;
+}

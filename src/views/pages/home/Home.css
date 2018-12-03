@@ -1,0 +1,18 @@
+.sb-Home-section, .sb-Separator {
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.sb-Home-top > img {
+	width: 200px;
+	height: auto;
+}
+
+.sb-Home-bottom {
+	display: flex;
+	flex-direction: column;
+}

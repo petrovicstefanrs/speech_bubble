@@ -1,0 +1,13 @@
+.sb-Separator {
+	background: var(--color__secondary);
+}
+
+.sb-Separator-horizontal {
+	height: 1px !important;
+	margin: 40px 0;
+}
+
+.sb-Separator-vertical {
+	width: 1px !important;
+	margin: 0 40px;
+}
